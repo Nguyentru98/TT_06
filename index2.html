@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // $("<div>", { class: "ptb50" }).append(
+                                            //     $("<div>", { class: "container" }).append(
+                                            //         $("<div>", { class: "w1 ptb25 crd df jcsc aic" }).append(
+                                            //             $("<i>", { class: "fa-solid fa-angles-right pr10" }),
+                                            //             $("<div>", { class: "fwb fs15", text: dữLiệu.tên(13398, "ụ") }),
+                                            //         ),
+                                            //         $("<div>", { class: "df df aic" }).append(
+                                            //             $("<div>", { class: "col-md-6  lh15 pr15" }).append(
+                                            //                 $("<div>", { class: "tieude-cmc fs15 fwb tar" }).text("Tuần lễ hàn quốc"),
+                                            //                 $("<div>", { class: "tieude-bv fs12 fwb tar" }).text("KẾT THÚC TUẦN LỄ VĂN HOÁ HÀN QUỐC 2020 - HƠI ẤM TRONG NHỮNG NGÀY ĐÔNG LẠNH GIÁ"),
+                                            //                 $("<smail>", { class: "tg-hdnk tar db" }).text("19/07/2021"),
+                                            //                 $("<div> ", { class: "nd-hdnk" }).text("Tuần lễ Văn hóa Hàn Quốc 2020 đã chính thức khép lại bằng “Đêm văn nghệ” đầy nhiệt huyết, đam mê cháy bỏng của các bạn sinh viên khoa Hàn cũng như từ sự cổ vũ của các quý khán giả thân mến. Thời gian tuy ngắn ngủi, nhưng cũng đã đọng lại…"),
+                                            //                 $("<a>", { class: "fsi crd tar db" }).text("Xem thêm"),
+                                            //             ),
+                                            //             $("<div>", { class: "col-md-6 df" }).append(
+                                            //                 $("<div>", { class: "w60" }).append(
+                                            //                     $("<div>", { class: "pb1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                 ),
+                                            //                 $("<div>", { class: "w40 df fdc" }).append(
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                 ),
+                                            //             ),
+                                            //         ),
+                                            //     ),
+                                            // ),
+                                            // $("<div>", { class: "wh1 df fdc jcsc ", style: "background:rgba(120, 0, 0, 0.06)" }).append(
+                                            //     $("<div>", { class: "w1 pr ptb50" }).append(
+                                            //         $("<div>", { class: "container df df aic" }).append(
+                                            //             $("<div>", { class: "col-md-6 df" }).append(
+                                            //                 $("<div>", { class: "w40 df fdc" }).append(
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                 ),
+                                            //                 $("<div>", { class: "w60" }).append(
+                                            //                     $("<div>", { class: "pb1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                 ),
+                                            //             ),
+                                            //             $("<div>", { class: "col-md-6  lh15 pl15" }).append(
+                                            //                 $("<div>", { class: "tieude-cmc fs15 fwb tal" }).text("Tuần lễ hàn quốc"),
+                                            //                 $("<div>", { class: "fs12 fwb tal" }).text("KẾT THÚC TUẦN LỄ VĂN HOÁ HÀN QUỐC 2020 - HƠI ẤM TRONG NHỮNG NGÀY ĐÔNG LẠNH GIÁ"),
+                                            //                 $("<smail>", { class: "tal db" }).text("19/07/2021"),
+                                            //                 $("<div> ", { class: "" }).text("Tuần lễ Văn hóa Hàn Quốc 2020 đã chính thức khép lại bằng “Đêm văn nghệ” đầy nhiệt huyết, đam mê cháy bỏng của các bạn sinh viên khoa Hàn cũng như từ sự cổ vũ của các quý khán giả thân mến. Thời gian tuy ngắn ngủi, nhưng cũng đã đọng lại…"),
+                                            //                 $("<a>", { class: "fsi crd tal db" }).text("Xem thêm"),
+                                            //             ),
+                                            //         ),
+                                            //         // hoa hoét
+                                            //         $("<div>", { class: "pa r0 b0 wh150 mb40" }).append(
+                                            //             $("<div>", { class: "wh1 pr" }).append(
+
+                                            //                 $("<div>", { class: "pa h50 w70 t0 r0" }).append(
+                                            //                     $("<div>", { class: "w70 h1 t0 r0" }).append(
+                                            //                         $("<div>", { class: "pa h1 w50 t0 ml10 bgrn bgso bgpc", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                         $("<div>", { class: "pa h50 w50 b0 bgrn bgso bgpc r0 ", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                     )
+                                            //                 ),
+                                            //                 $("<div>", { class: "pa h50 w1 h1 b0 l0" }).append(
+                                            //                     $("<div>", { class: "w60 h1 t0 r0" }).append(
+                                            //                         $("<div>", { class: "pa h1 w1 t0 bgrn bgso bgpc", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                     ),
+                                            //                 ),
+
+
+                                            //             )
+                                            //         ),
+                                            //         $("<div>", { class: "pa l0 b0 h60 w200" }).append(
+                                            //             $("<div>", { class: "wh1 pr" }).append(
+                                            //                 $("<div>", { class: "pa wh40 b0 mb5 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_hoagoc.png)" }),
+                                            //                 $("<div>", { class: "pa h50 w20 t0 mt-10 mb5 ml25 bgrn bgso brpc", style: "background-image:url(assets/kr_hoatren.png)" }),
+                                            //                 $("<div>", { class: "pa h1 w40 b0 ml50 bgrn bgso brpc", style: "background-image:url(assets/kr_hoadoto.png)" }),
+                                            //                 $("<div>", { class: "pa h50 w10 r0 mt3 t0 bgrn mr50 bgso brpc", style: "background-image:url(assets/kr_hoatren.png)" }),
+                                            //                 $("<div>", { class: "pa h30 w25 r0 b0 bgrn bgso brpc", style: "background-image:url(assets/kr_hoagoc.png)" }),
+                                            //             )
+                                            //         ),
+                                            //         $("<div>", { class: "pa l0 b0 h60 w1" }).append(
+                                            //             $("<div>", { class: "wh1 df ml5 jcsc pr" }).append(
+                                            //                 $("<div>", { class: " h1 w85 b0 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_linea2.png)" }),
+                                            //             )
+                                            //         ),
+                                            //         $("<div>", { class: "pa l0 b0 h60 w1" }).append(
+                                            //             $("<div>", { class: "wh1 df ml5 jcsc pr" }).append(
+                                            //                 $("<div>", { class: " h1 w85 b0 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_linea2.png)" }).css("transform", "rotate(-2deg)"),
+                                            //             )
+                                            //         ),
+                                            //         // end hoa hoét
+                                            //     ),
+
+                                            // ),
+                                            // $("<div>", { class: "ptb50" }).append(
+                                            //     $("<div>", { class: "container" }).append(
+                                            //         $("<div>", { class: "w1 ptb25 crd df jcsc aic" }).append(
+                                            //             $("<i>", { class: "fa-solid fa-angles-right pr10" }),
+                                            //             $("<div>", { class: "fwb fs15", text: dữLiệu.tên(13398, "ụ") }),
+                                            //         ),
+                                            //         $("<div>", { class: "df df aic" }).append(
+                                            //             $("<div>", { class: "col-md-6  lh15 pr15" }).append(
+                                            //                 $("<div>", { class: "tieude-cmc fs15 fwb tar" }).text("Tuần lễ hàn quốc"),
+                                            //                 $("<div>", { class: "fs12 fwb tar" }).text("KẾT THÚC TUẦN LỄ VĂN HOÁ HÀN QUỐC 2020 - HƠI ẤM TRONG NHỮNG NGÀY ĐÔNG LẠNH GIÁ"),
+                                            //                 $("<smail>", { class: "tar db" }).text("19/07/2021"),
+                                            //                 $("<div> ", { class: "" }).text("Tuần lễ Văn hóa Hàn Quốc 2020 đã chính thức khép lại bằng “Đêm văn nghệ” đầy nhiệt huyết, đam mê cháy bỏng của các bạn sinh viên khoa Hàn cũng như từ sự cổ vũ của các quý khán giả thân mến. Thời gian tuy ngắn ngủi, nhưng cũng đã đọng lại…"),
+                                            //                 $("<a>", { class: "fsi crd tar db" }).text("Xem thêm"),
+                                            //             ),
+                                            //             $("<div>", { class: "col-md-6 df" }).append(
+                                            //                 $("<div>", { class: "w60" }).append(
+                                            //                     $("<div>", { class: "pb1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                 ),
+                                            //                 $("<div>", { class: "w40 df fdc" }).append(
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                     $("<div>", { class: "pa15", style: "height: 50%" }).append(
+                                            //                         $("<div>", { class: "wh1 bgsc bgrn bgpc", style: "background-image: url('assets/hd-nk-1.jpg')" })
+                                            //                     ),
+                                            //                 ),
+                                            //             ),
+                                            //         ),
+                                            //     ),
+                                            // ),
+    </script>
+    <script>
+        // $("<div>", { class: "w1" }).each(function () {
+                                            //     var t = $(this);
+                                            //     CẦN.db("chuyênLực.13398", function () {
+                                            //         t.empty().append(
+                                            //             (config("chuyênLực.13398") || []).map(function (item, index) {
+                                            //                 return $("<div>", { class: "df jcsb pa25 pr" + (index == 1 ? " fdrr màuHoạtĐộng2" : "") }).append(
+                                            //                     $("<div>", { class: "" }).xửLý("đốiTượng.tải.bàiViết",
+                                            //                         {
+                                            //                             d: {
+                                            //                                 thuộcTính: {
+                                            //                                     ụ: [item, "~|"],
+                                            //                                     p: "1"
+                                            //                                 },
+                                            //                                 sắpXếp: "ấ",
+                                            //                                 giớiHạn: 1
+                                            //                             }
+                                            //                         },
+                                            //                         { cache: true, delay: 123, bảng: "bàiViết" },
+                                            //                         function (a) {
+                                            //                             var th = $(this)
+                                            //                             th.empty().append(
+                                            //                                 $("<div>", { class: "col-xs-12 col-sm-6 pa25" }).append(
+                                            //                                     $("<a>", { class: "db fr ttu fs11 fwb", text: dữLiệu.tên(item, "ụ"), href: dữLiệu.url(item, "ụ") }),
+                                            //                                     $("<div>", { class: "" }).append(
+                                            //                                         (a || []).map(function (á, à) {
+                                            //                                             return $("<div>", { class: "" }).append(
+                                            //                                                 $("<div>", { class: "ttu", text: dữLiệu.tên(á, "ế") }),
+                                            //                                                 $("<div>", { class: "", text: iDate(config("bàiViết." + á + ".ờ"), "DD/MM/YYYY") }),
+                                            //                                                 $("<div>", { class: "", text: dữLiệu.môTả(á, "ế") }),
+                                            //                                             )
+
+                                            //                                         })
+                                            //                                     )
+                                            //                                 ),
+                                            //                                 $("<div>", { class: "col-xs-12 col-sm-6 pa25" }).append(
+                                            //                                     $("<div>", { class: "pb31 bgsc ngrn bgpc" }).ảnh(a[0], "ế", true)
+                                            //                                 )
+                                            //                             )
+
+                                            //                         }
+                                            //                     ),
+                                            //                     index == 1 && $("<div>", { class: "pa r0 b0 wh150 mb40" }).append(
+                                            //                         $("<div>", { class: "wh1 pr" }).append(
+
+                                            //                             $("<div>", { class: "pa h50 w70 t0 r0" }).append(
+                                            //                                 $("<div>", { class: "w70 h1 t0 r0" }).append(
+                                            //                                     $("<div>", { class: "pa h1 w50 t0 ml10 bgrn bgso bgpc", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                                     $("<div>", { class: "pa h50 w50 b0 bgrn bgso bgpc r0 ", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                                 )
+                                            //                             ),
+                                            //                             $("<div>", { class: "pa h50 w1 h1 b0 l0" }).append(
+                                            //                                 $("<div>", { class: "w60 h1 t0 r0" }).append(
+                                            //                                     $("<div>", { class: "pa h1 w1 t0 bgrn bgso bgpc", style: "background-image:url(assets/kr_blue1.png)" }),
+                                            //                                 ),
+                                            //                             ),
+                                            //                         )
+                                            //                     ),
+                                            //                     index == 1 && $("<div>", { class: "pa l0 b0 h60 w200" }).append(
+                                            //                         $("<div>", { class: "wh1 pr" }).append(
+                                            //                             $("<div>", { class: "pa wh40 b0 mb5 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_hoagoc.png)" }),
+                                            //                             $("<div>", { class: "pa h50 w20 t0 mt-10 mb5 ml25 bgrn bgso brpc", style: "background-image:url(assets/kr_hoatren.png)" }),
+                                            //                             $("<div>", { class: "pa h1 w40 b0 ml50 bgrn bgso brpc", style: "background-image:url(assets/kr_hoadoto.png)" }),
+                                            //                             $("<div>", { class: "pa h50 w10 r0 mt3 t0 bgrn mr50 bgso brpc", style: "background-image:url(assets/kr_hoatren.png)" }),
+                                            //                             $("<div>", { class: "pa h30 w25 r0 b0 bgrn bgso brpc", style: "background-image:url(assets/kr_hoagoc.png)" }),
+                                            //                         )
+                                            //                     ),
+                                            //                     index == 1 && $("<div>", { class: "pa l0 b0 h60 w1" }).append(
+                                            //                         $("<div>", { class: "wh1 df ml5 jcsc pr" }).append(
+                                            //                             $("<div>", { class: " h1 w85 b0 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_linea2.png)" }),
+                                            //                         )
+                                            //                     ),
+                                            //                     index == 1 && $("<div>", { class: "pa l0 b0 h60 w1" }).append(
+                                            //                         $("<div>", { class: "wh1 df ml5 jcsc pr" }).append(
+                                            //                             $("<div>", { class: " h1 w85 b0 l0 bgrn bgso brpc", style: "background-image:url(assets/kr_linea2.png)" }).css("transform", "rotate(-2deg)"),
+                                            //                         )
+                                            //                     ),
+
+                                            //                 )
+                                            //             })
+                                            //         )
+                                            //     })
+                                            // }),
+
+                                            //-------------------------------------------------------------------
+    </script>
+</body>
+
+</html>
