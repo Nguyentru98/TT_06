@@ -186,7 +186,7 @@
                                                     d: {
                                                         thuộcTính: {
                                                             ụ: ["13392", "~|"],
-                                                            p: "1", //công khai 
+                                                            p: "1", 
                                                         },
                                                         sắpXếp: "ấ-",
                                                         giớiHạn: 1,
@@ -290,19 +290,19 @@
                                             ),
                                             xửLý("đốiTượng.tải.bàiViết",
                                                 {
-                                                    d: { // d: data
+                                                    d: { 
                                                         thuộcTính: {
-                                                            ụ: ["13393", "~|"], // id chuyên mục cha
-                                                            p: "1", // bài viết công khai = 1 , ko công khai = 0
+                                                            ụ: ["13393", "~|"],
+                                                            p: "1", 
                                                         },
-                                                        sắpXếp: "ấ", // sắp xếp cũ nhất
+                                                        sắpXếp: "ấ", 
                                                         giớiHạn: 5,
                                                     },
 
                                                 }, { cache: true, delay: 500, bảng: "bàiViết" },
-                                                function (a) { // a là mảng id các bài viết trong chuyên mục
+                                                function (a) { 
                                                     $(".tt1").empty().append(
-                                                        (a || []).map(function (item, index) {    // item là id bài viết                                              
+                                                        (a || []).map(function (item, index) {                                             
                                                             if (index == 0 || index == 1) {
                                                                 return $("<div>", { class: "bgsc bgrn bgpc pb169 pr mb10" }).ảnh(item, "ế", true).append(
                                                                     $("<div>", { class: "pa b0 w1 pa15 bgc03 cf" }).append(
@@ -314,7 +314,7 @@
                                                         }),
                                                     ),
                                                         $(".tt2").empty().append(
-                                                            (a || []).map(function (item, index) {    // item là id bài viết                                              
+                                                            (a || []).map(function (item, index) {                                         
                                                                 if (index == 2) {
                                                                     return $("<div>", { class: "df fdc h1" }).append(
                                                                         $("<div>", { class: "df fdc jcsc", style: "height:30%" }).append(
@@ -331,7 +331,7 @@
                                                             }),
                                                         ),
                                                         $(".tt3").empty().append(
-                                                            (a || []).map(function (item, index) {    // item là id bài viết                                              
+                                                            (a || []).map(function (item, index) {                                         
                                                                 if (index == 3 || index == 4) {
                                                                     return $("<div>", { class: "bgsc bgrn bgpc pb169 mb10 pr" }).ảnh(item, "ế", true).append(
                                                                         $("<div>", { class: "pa b0 w1 pa15 bgc03 cf" }).append(
@@ -361,15 +361,14 @@
                                                                     return $("<div>", { class: "col-md-3 màuMụcTB crd ptb15 cfh fwb cpi bgcr4h tac mục" + index, text: dữLiệu.tên(item, "ụ") }).on("click", function () {
                                                                         $(".menu-thongBao").find(".bgcrd").sửaLớp("-bgcrd -cf");
                                                                         $(this).sửaLớp("bgcrd -crd cf");
-
                                                                         xửLý("đốiTượng.tải.bàiViết",
                                                                             {
-                                                                                d: { // d: data
+                                                                                d: { 
                                                                                     thuộcTính: {
-                                                                                        ụ: [item, "~|"], // id chuyên mục cha
-                                                                                        p: "1", // bài viết công khai = 1 , ko công khai = 0
+                                                                                        ụ: [item, "~|"],
+                                                                                        p: "1", 
                                                                                     },
-                                                                                    sắpXếp: "ấ", // sắp xếp cũ nhất
+                                                                                    sắpXếp: "ấ", 
                                                                                     giớiHạn: 5,
                                                                                 },
                                                                             }, { cache: true, delay: 123, bảng: "bàiViết" },
