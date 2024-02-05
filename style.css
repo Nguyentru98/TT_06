@@ -13,3 +13,18 @@
 .màuHoạtĐộng2 {
     background:rgba(120, 0, 0, 0.06)
 }
+@media (max-width: 479px) {
+    .tt1{
+        order: 2;
+    };
+    .tt2{
+        order: 1;
+    };
+    .tt3{
+        order: 3;
+    }
+    .wh70-xs{
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
