@@ -1,30 +1,42 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    outline: none;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
 }
-.màuMụcTB{
-    background-color: #e8dbdb;
+.màuMụcTB {
+  background-color: #e8dbdb;
 }
 
 .màuHoạtĐộng2 {
-    background:rgba(120, 0, 0, 0.06)
+  background: rgba(120, 0, 0, 0.06);
 }
 @media (max-width: 479px) {
-    .tt1{
-        order: 2;
-    };
-    .tt2{
-        order: 1;
-    };
-    .tt3{
-        order: 3;
-    }
-    .wh70-xs{
-        width: 70px !important;
-        height: 70px !important;
-    }
+  .tt1 {
+    order: 2;
+  }
+  .tt2 {
+    order: 1;
+  }
+  .tt3 {
+    order: 3;
+  }
+  .wh70-xs {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+.nd-menu {
+  animation: slideToLeft 1s ease-in-out;
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
